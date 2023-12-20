@@ -1,0 +1,290 @@
+html {
+    font-size: 16px;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+body {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img {
+    padding: 0 1rem;
+    height: 2rem;
+}
+
+.logo-header h1 {
+    margin: 0;
+}
+
+#logo-font {
+    color: #8ECAE6;
+}
+
+.toolbar {
+    float: right;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.toolbar li, .toolbar ul {
+    list-style: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.toolbar a { 
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+button.signup {
+    background-color: #219EBC;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main {
+
+}
+
+.shoutout {
+
+}
+
+.splash-graphic {
+    
+}
+
+.splash {
+    display: flex;
+}
+
+.splash-text {
+    width: 50%;
+    margin: 2%;
+}
+
+.splash-text h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.splash-text h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+#splash-style {
+    color: #FFB703;
+}
+
+.splash-graphic {
+    width: 50%;
+    margin: 2%;
+    background-image: url("../media/Background-Graphic.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoutout {
+    color: #FB8500;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: left;
+    margin: 1rem 0 0 0;
+}
+
+.image-section {
+    text-align: center;
+    background-color: #219EBC;
+    padding: 2rem 2%;
+}
+
+.img-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-gallery img {
+    width: 30%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.fa-solid {
+    color: #FB8500;
+}
+
+.events {
+    text-align: center;
+}
+
+.next-event {
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.next-event img {
+    max-width: 80%;
+    border: 1rem #FB8500 solid;
+}
+
+.event-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.event-gallery .event {
+    max-width: 20%;
+}
+
+.event img {
+    max-width: 100%;
+}
+
+.quote-section {
+    background-color: #8ECAE6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.quote h2, .quote h3 {
+    margin: 0;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0 0 1rem 0;
+}
+
+footer {
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer img {
+    padding: 1rem;
+    height: 2.5rem;
+}
+
+.logo-footer h1 {
+    margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .splash-graphic {
+        display: none;
+    }
+
+    .splash-text {
+        width: 100%;
+    }
+
+    .event-gallery .event {
+        max-width: 40%;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .img-gallery img {
+        width: 80%;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer .toolbar, header .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .footer h1, header h1 {
+        padding-right: 1rem;
+    }
+
+    .footer .toolbar ul, header .toolbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .footer .toolbar ul li, header .toolbar ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.25rem;
+    }
+
+    .footer .logo-footer, header .logo-header {
+        align-self: center;
+    }
+}
